@@ -1,8 +1,12 @@
-# superheroes-back
+# dzen-orders-back
 
-Backend to Superheroes app.
+Backend to [dzen-orders app](https://github.com/YarPetru/dzen-orders-app).
 
-## To start immediately
+## If you want run in developmant mode follow the steps below
+
+### clone this repo to your workspace
+
+using command: git clone https://github.com/YarPetru/dzen-orders-back
 
 ### Add DB_HOST to environment variables
 
