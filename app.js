@@ -10,7 +10,14 @@ const app = express();
 const server = require('http').Server(app);
 const io = socketIO(server);
 
-app.use(cors());
+app.use(
+  cors({
+    origin: 'http://localhost:3000',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 app.use(express.static('public'));
 
