@@ -12,4 +12,6 @@ router.get('/:id', isValidId, controller.getById);
 
 router.post('/', validateBody(productSchema), controller.createProduct);
 
+router.delete('/:id', isValidId, controller.deleteProduct);
+
 module.exports = router;

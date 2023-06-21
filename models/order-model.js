@@ -1,12 +1,15 @@
 const { Schema, model } = require('mongoose');
 const { handleMongooseError } = require('../helpers');
 
-
 const orderSchema = new Schema(
   {
     title: String,
     date: String,
     description: String,
+  },
+  {
+    versionKey: false,
+    timestamps: true,
   }
 );
 
